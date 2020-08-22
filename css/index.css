@@ -1,0 +1,13 @@
+body{
+    background-color: #ffd389;
+}
+
+#logo{
+
+}
+#logo img{
+    height: 200px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}

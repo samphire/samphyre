@@ -1,13 +1,161 @@
-body{
-    background-color: #ffd389;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
-#logo{
-
+body {
+    background-color: #777;
 }
-#logo img{
-    height: 200px;
+
+
+
+.logo {
+    float: left;
+    color: bisque;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    height: 50px;
     max-width: 100%;
     display: block;
-    margin: auto;
+    margin-right: 20px;
+    float: left;
+}
+
+header {
+    background-color: black;
+    /*border: 2px solid teal;*/
+    height: 70px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /*border: 2px solid red;*/
+}
+
+nav {
+    float: right;
+    /*border: 2px solid black;*/
+
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav  a::before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    transition: ease-in-out 200ms;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+body > img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        /*text-align: center;*/
+    }
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: bisque;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .logo img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    header {
+        background-color: black;
+        /*border: 2px solid teal;*/
+        height: 50px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 0 auto;
+        /*border: 2px solid red;*/
+    }
+nav{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+    nav ul li {
+        display: block;
+        font-size: 1rem;
+        font-weight: 900;
+        /*margin-left: 70px;*/
+        padding-top: 25px;
+        /*position: relative;*/
+    margin: auto 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #eee;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    body > img {
+        position: absolute;
+        bottom: 0;
+        display: block;
+    }
 }

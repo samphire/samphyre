@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7d62fbf1-af5e-4142-aafc-09d92613635c" name="AWS Linux2 Samphyre" url="http://samphyre.org">
+        <fileTransfer rootFolder="/var/www/html/samphire" accessType="SFTP" host="samphyre.org" port="22" sshConfigId="de85653f-dc1d-4480-9115-25771bf073e6" sshConfig="ec2-user@samphyre.org:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

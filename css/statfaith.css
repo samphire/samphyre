@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: visible !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-color: #eeeeee;
+}
+.panel {
+    margin: 0 auto;
+    padding: 20px 10px 0 0;
+    /*background-color: #eeeeee;*/
+    font-size: 1.2rem;
+    line-height: 2rem;
+    /*margin-top: -12px;*/
+}
+
+.webelieve{
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .panel{
+        width: 70%;
+    }
+
+}

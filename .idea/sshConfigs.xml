@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="samphyre.org" id="de85653f-dc1d-4480-9115-25771bf073e6" keyPath="C:\Users\oakle\.ssh\matt_linux2.ppk" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="samphyre.org" id="de85653f-dc1d-4480-9115-25771bf073e6" keyPath="C:\Users\oakle\.ssh\matt_linux2.ppk" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
     </configs>
   </component>
 </project>

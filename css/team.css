@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --photo-height: 100px;
+}
+html, body {
+    overflow: visible !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.notyet{
+    display: none;
+}
+
+img {
+    display: inline;
+}
+.container{
+    position: relative;
+}
+
+.leader {
+    border-bottom-left-radius: 3px;
+    background-color: #eeeeee;
+    padding: 20px;
+    font-size: 1.2rem;
+    /*line-height: 2rem;*/
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.leader p {
+    margin: 0 0 0.4rem 0;
+}
+
+.leader__info {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.leader .--name {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.leader .--title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.leader__photo {
+    height: var(--photo-height);
+    float: left;
+    clear: left;
+    margin-right: 20px;
+}
+
+.location {
+    height: var(--photo-height);
+    float: right;
+}
+.leader__bio{
+    margin-top: 20px;
+}
+@media only screen and (min-width: 1000px) {
+
+    :root{
+        --photo-height: 150px;
+    }
+
+    .leader:first-of-type{
+        padding-top: 40px;
+    }
+
+    .leader .--name {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .leader .--title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .leader__photo {
+        /*width: 56%;*/
+        float: left;
+        clear: left;
+        margin-top: 0;
+    }
+
+    .location {
+        float: right;
+        /*width: 36%;*/
+    }
+    .panel{
+        width: 70%;
+        margin: auto;
+    }
+    body{
+        background-color: #eee;
+    }
+}
